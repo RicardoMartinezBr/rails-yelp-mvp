@@ -1,0 +1,10 @@
+<% @restaurants.each do |restaurant| %>
+  <div class="d-flex  ml-5">
+    <div style="width:300px;height:200px;" class="border mt-5 p-3 ">
+      <h2><%= restaurant.name %></h2>
+      <p><%= restaurant.address %></p>
+      <p><%= restaurant.category %></p>
+      <%= link_to "See more", restaurant %>
+    </div>
+  <div>
+<% end %>
